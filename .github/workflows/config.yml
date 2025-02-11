@@ -40,3 +40,7 @@ jobs:
         - name: build docker image
           run: |
            docker build =t nooraaj/myflask-app:latest .
+
+        - name: push to docker hub
+          run: |
+           docker push nooraaj/myflask-app:latest
